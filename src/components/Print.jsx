@@ -19,45 +19,45 @@ export default function Print(props) {
     );
 }
 
-class PrintClassComponent extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            counter: 1,
-            cart: 1
-        }
+// class PrintClassComponent extends React.Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+//             counter: 1,
+//             cart: 1
+//         }
 
-        this.upCount = this.upCount.bind(this);
-    }
+//         this.upCount = this.upCount.bind(this);
+//     }
 
-    componentDidMount(){
-        console.log("Mounted");
-    }
+//     componentDidMount(){
+//         console.log("Mounted");
+//     }
 
-    componentDidUpdate(prevState, presentState){
-        // presentState.cart > 10{
+//     componentDidUpdate(prevState, presentState){
+//         // presentState.cart > 10{
             
-        // }
-    }
+//         // }
+//     }
 
-    componentWillUnmount(){
+//     componentWillUnmount(){
         
-    }
+//     }
     
-    upCount(){
-        this.setState({
-            counter: this.state.counter + 1
-        });
-    }
+//     upCount(){
+//         this.setState({
+//             counter: this.state.counter + 1
+//         });
+//     }
 
-    render() {
-        return (
-            <h2>
-                Print {this.props.data} {this.state.counter}
-                <button onClick={this.upCount}>Click</button>
-            </h2>
-        );
-    }
-}
+//     render() {
+//         return (
+//             <h2>
+//                 Print {this.props.data} {this.state.counter}
+//                 <button onClick={this.upCount}>Click</button>
+//             </h2>
+//         );
+//     }
+// }
 
 // const x = new PrintClassComponent(data);
